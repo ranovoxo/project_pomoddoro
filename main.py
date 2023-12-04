@@ -19,4 +19,15 @@ LONG_BREAK_MIN = 20
 window = Tk()
 window.title("Pomodoro")
 
+# Canvas setup w/ tomato image
+canvas = Canvas(width=200, height=224)
+tomato_photo = PhotoImage(file="tomato.png")
+canvas.create_image(100, 112, image=tomato_photo)
+canvas.pack()
+
+
+
+
+
+window.mainloop()
 
